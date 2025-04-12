@@ -1,0 +1,232 @@
+body {
+  background-color: rgb(12, 12, 12);
+  color: rgb(233, 233, 233);
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  text-align: center;
+}
+
+.top {
+  min-height: 50px;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar {
+  display: flex;
+  width: 60vw;
+  height: 100%;
+  max-width: 1100px;
+  min-width: 600px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(26, 26, 26);
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.nav-bar > a {
+  font-size: 35px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  color: rgb(233, 233, 233);
+  text-decoration: none;
+}
+.section-1 {
+  height: 100vh;
+}
+.profile {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.profile-text {
+  margin-left: 100px;
+  text-align: left;
+}
+.profile-text > h1 {
+  margin: 0;
+  height: 95px;
+  font-weight: 200;
+  font-size: 60px;
+}
+.my-name {
+  font-family: "winky sans";
+  font-weight: 350;
+  font-size: 75px;
+}
+.profile-text > h2 {
+  font-family: "winky sans";
+  font-size: 30px;
+  margin-top: 0;
+  font-weight: 500;
+}
+.profile-text > p {
+  max-width: 600px;
+  font-size: 20px;
+  font-family: "DM Sans";
+  font-weight: 350;
+}
+
+.profile-image {
+  object-fit: cover;
+  height: 36vh;
+  min-height: 250px;
+  width: 250px;
+  border-radius: 10px;
+}
+.skill-parent-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.skill-container {
+  width: 60vw;
+  max-width: 1100px;
+  min-width: 600px;
+}
+.divider1 {
+  height: 1px;
+  margin-top: 5vh;
+
+  margin-bottom: 10px;
+  background-color: rgb(141, 141, 141);
+}
+.divider2 {
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: rgb(141, 141, 141);
+}
+
+.tech-skills {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill > img {
+  height: 10vh;
+}
+
+.section-2 {
+  height: 99vh;
+  background-color: aquamarine;
+}
+.section-3 {
+  height: 99vh;
+  background-color: brown;
+}
+.section-4 {
+  height: 99vh;
+  background-color: chartreuse;
+}
+
+@media (max-width: 1200px) {
+  .profile-text {
+    margin-left: 40px;
+    text-align: left;
+  }
+  .profile-text > p {
+    max-width: 500px;
+  }
+  .profile-text > h1 {
+    font-weight: 200;
+    height: 75px;
+    font-size: 50px;
+  }
+  .my-name {
+    font-weight: 350;
+    font-size: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .nav-bar {
+    width: 100vw;
+    max-width: none;
+    min-width: 200px;
+    padding: 0px 50px 0px 50px;
+  }
+  .nav-bar > a {
+    font-size: 23px;
+    margin: 0;
+  }
+  .profile {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .profile-text {
+    margin-left: 0;
+    padding: 0;
+  }
+  .profile-image {
+    display: inline;
+    margin-left: 0;
+  }
+  .profile-text > h1,
+  .my-name,
+  .profile-text > h2,
+  .profile-text > p {
+    text-align: center;
+  }
+  .profile-text > h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .my-name,
+  .profile-text > h1 {
+    font-size: 40px;
+    height: 45px;
+    margin-top: 10px;
+  }
+  .profile-text > p {
+    margin-top: 20px;
+    width: 350px;
+  }
+  .skill > img,
+  .tech-skills {
+    height: 7vh;
+  }
+  .divider1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .divider2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .skill-container {
+    width: 100%;
+    max-width: none;
+    min-width: 200px;
+  }
+}
+@media (max-width: 450px) {
+  .nav-bar {
+    padding: 0px 10px 0px 10px;
+  }
+  .nav-bar > a {
+    font-size: 19px;
+    margin: 0;
+  }
+  .profile-text > p {
+    font-size: 14px;
+    width: 300px;
+    margin: 0;
+  }
+  .my-name,
+  .profile-text > h1 {
+    font-size: 30px;
+  }
+  .profile-text > h2 {
+    font-size: 17px;
+  }
+  .skill > img {
+    height: 5vh;
+  }
+}
