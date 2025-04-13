@@ -6,6 +6,12 @@ body {
   margin: 0;
   text-align: center;
 }
+html {
+  scroll-behavior: smooth;
+}
+* {
+  transition: all 0.2s ease-in-out;
+}
 
 .top {
   min-height: 50px;
@@ -139,24 +145,35 @@ body {
   max-width: 1300px;
 }
 .project {
-  background-color: rgb(30, 30, 30);
-  width: 250px;
-  height: 350px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 260px;
+  height: 360px;
   border-radius: 8px;
 }
+
 a {
   text-decoration: none;
+  text-align: left;
   color: white;
 }
 .project > img {
-  width: 250px;
-  height: 170px;
+  width: 260px;
+  height: 200px;
+  -webkit-mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
   border-bottom: 2px rgb(255, 255, 255) solid;
+  transition: -webkit-mask-image 0.5s ease-in-out, mask-image 0.5s ease-in-out;
+}
+.project > img:hover {
+  -webkit-mask-image: none;
+  mask-image: none;
 }
 .project > div {
   padding: 5px;
+  border-radius: 0px 0px 8px 8px;
 }
 .project-heading {
   margin: 0;
